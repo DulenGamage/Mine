@@ -1,0 +1,22 @@
+{
+    "name":"Visiting Cards",
+    "short_name":"V Card",
+    "start_url":"main.html",
+    "display":"standalone",
+    "background_color":"#5900b3",
+    "theme_color":"black",
+    "scope": ".",
+    "description":"",
+    "icons":[
+    {
+    "src":"",                     
+    "sizes":"192x192",
+    "type":"image/png"
+    },
+    {
+    "src":"",
+    "sizes":"512x512",
+    "type":"image/png"
+    }
+  ]
+}
