@@ -1,4 +1,8 @@
-<!-- Example container -->
+<html>
+    <head>
+        <title>V CARDS</title>
+        <link rel="manifest" href="manifest.json">
+    </head>
 <style>
     body {
         
@@ -140,3 +144,23 @@ INFO: The selectable class adds a pointer and shadow animations on hover.
     
 
 </div>
+<script>
+    window.addEventListener('load', () => {
+      registerSW();
+    });
+ 
+    // Register the Service Worker
+    async function registerSW() {
+      if ('serviceWorker' in navigator) {
+        try {
+          await navigator
+                .serviceWorker
+                .register('serviceworker.js');
+        }
+        catch (e) {
+          console.log('SW registration failed');
+        }
+      }
+    }
+ </script>
+</html>
